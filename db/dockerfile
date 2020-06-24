@@ -1,0 +1,6 @@
+FROM postgres:11
+
+# move init script from project to postgres init dir
+COPY /db/init.sql /docker-entrypoint-initdb.d/
+
+EXPOSE 5432

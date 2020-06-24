@@ -1,5 +1,1 @@
-FROM postgres:latest
-
-COPY init.sql /docker-entrypoint-initdb.d/init.sql
-
-ENV PGDATA=/data
+FROM node:latest
